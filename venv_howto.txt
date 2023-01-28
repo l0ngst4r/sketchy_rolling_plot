@@ -1,0 +1,56 @@
+// create dir in command prompt
+mkdir your_dir
+
+//choose dir in command prompt
+cd your_dir
+
+//start, type:
+python -m venv project_env  <-- project name
+
+//activate:
+project_env\Scripts\activate.bat
+
+//list installed packages:
+pip list
+
+//path to current python command:
+where python
+
+//the version of python env in the venv will be the same as the version it was created with
+
+// capture requirements to install
+pip freeze > requirements.txt
+
+// install requirements from requirements.txt
+pip install -r requirements.txt
+
+// or
+$ env1/bin/pip freeze > requirements.txt
+$ env2/bin/pip install -r requirements.txt
+
+//deactivate env:
+deactivate
+
+//to delete:
+rmdir project_env /s
+
+//proper way to create venv:
+//create project dir:
+mkdir my_project
+//put the venv inside that:
+python -m venv my_project\venv
+
+//activate
+my_project\venv\Scripts\activate.bat
+
+//protip: do not put anything into the env folder
+//env-s mst be easily removed and rebuilt without risking project files
+
+//creating a env containing the existing system-wide packages
+python -m venv project_name\venv --system-site-packages
+
+//list installed packages that have not been created by default (pip installed by user)
+pip list --local
+
+//list requirements only installed on venv:
+pip freeze --local

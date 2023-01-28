@@ -1,0 +1,14 @@
+'Humor Sans' is available here:
+    https://github.com/imkevinxu/xkcdgraphs/blob/master/Humor-Sans-1.0.ttf
+
+Double-click on font .tff to install
+
+If you install the font, you must first update matplotlib font cache
+on windows its usually here:
+c:\Users\username\.matplotlib\
+
+You can find the dir of the cache by running in python
+import matplotlib as mpl
+print(mpl.get_cachedir())
+
+Delete fontlist-somenumber.json (mine right now is fontlist-v330.json) and just run the python program, matplotlib rebuilds the fontlist by itself.

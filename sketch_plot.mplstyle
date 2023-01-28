@@ -1,0 +1,13 @@
+font.family        : Humor Sans
+font.size          : 14.0
+path.sketch        : 1, 100, 50
+axes.linewidth     : 1.5
+lines.linewidth    : 2.0
+figure.facecolor   : white
+grid.linewidth     : 0.0
+axes.unicode_minus : False
+axes.prop_cycle    : cycler(color='brcm')
+xtick.major.size   : 8
+xtick.major.width  : 3
+ytick.major.size   : 8
+ytick.major.width  : 3
